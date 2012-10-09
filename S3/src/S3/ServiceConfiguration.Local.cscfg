@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="S3" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="S3CloudServices">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="iqman" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEA5npRkZR7WxTWA5KhEPKWgwDQYJKoZIhvcNAQEBBQAEggEAKSVp0l7jJPYbsnwq9FP+OQiAbiyBMeoK9YXzWVPIpIsYdtoxnSpqkaK8HNlzZ0aWD3hWTn5aI8670LgnbGKMbR3t3B+DPzZHq1dKHGnNd7tJk2j7FNJoTkLLpP42nIF/n8PCRrJ9Gs+Hw9W4uNe6OPo1PZjfmHKWUYDbpiNTsVl7cdMqfugizNR50bHUN2XOU13CIZZuNZXjJAyoXpCWuq2HOpDm/9smIs3k+yunS2Wcd3txFkAt/LWDm/i8hEMk6qroZ98iXk2lNsc6RMXBdBYzKh8hm3Yqev6VA2taxNnzXiQpQXqAd2XcQbZOxRPVN/dFIf0vuAwYYdizCFtMRTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECFSSa1cvZ7CQgBBZGVlqHUyWl34PnmAUn42c" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-05-22T23:59:59.0000000+02:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="7EED7AD9A90A63D428CA86BB10C95DBA86806A4F" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

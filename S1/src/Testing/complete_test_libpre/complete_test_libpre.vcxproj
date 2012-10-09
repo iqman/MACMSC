@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32F44B40-2273-43C7-80FA-FAB720132B81}</ProjectGuid>
+    <RootNamespace>complete_test_libpre</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="big.cpp" />
+    <ClCompile Include="ecn.cpp" />
+    <ClCompile Include="mraes.c" />
+    <ClCompile Include="mralloc.c" />
+    <ClCompile Include="mrarth0.c" />
+    <ClCompile Include="mrarth1.c" />
+    <ClCompile Include="mrarth2.c" />
+    <ClCompile Include="mrarth3.c" />
+    <ClCompile Include="mrbits.c" />
+    <ClCompile Include="mrbrick.c" />
+    <ClCompile Include="mrbuild.c" />
+    <ClCompile Include="mrcore.c" />
+    <ClCompile Include="mrcrt.c" />
+    <ClCompile Include="mrcurve.c" />
+    <ClCompile Include="mrdouble.c" />
+    <ClCompile Include="mrebrick.c" />
+    <ClCompile Include="mrec2m.c" />
+    <ClCompile Include="mrecn2.c" />
+    <ClCompile Include="mrfast.c" />
+    <ClCompile Include="mrflash.c" />
+    <ClCompile Include="mrflsh1.c" />
+    <ClCompile Include="mrflsh2.c" />
+    <ClCompile Include="mrflsh3.c" />
+    <ClCompile Include="mrflsh4.c" />
+    <ClCompile Include="mrfrnd.c" />
+    <ClCompile Include="mrgcd.c" />
+    <ClCompile Include="mrgcm.c" />
+    <ClCompile Include="mrgf2m.c" />
+    <ClCompile Include="mrio1.c" />
+    <ClCompile Include="mrio2.c" />
+    <ClCompile Include="mrjack.c" />
+    <ClCompile Include="mrlucas.c" />
+    <ClCompile Include="mrmonty.c" />
+    <ClCompile Include="mrmuldv.c" />
+    <ClCompile Include="mrpi.c" />
+    <ClCompile Include="mrpower.c" />
+    <ClCompile Include="mrprime.c" />
+    <ClCompile Include="mrrand.c" />
+    <ClCompile Include="mrround.c" />
+    <ClCompile Include="mrscrt.c" />
+    <ClCompile Include="mrshs.c" />
+    <ClCompile Include="mrshs256.c" />
+    <ClCompile Include="mrshs512.c" />
+    <ClCompile Include="mrsmall.c" />
+    <ClCompile Include="mrsroot.c" />
+    <ClCompile Include="mrstrong.c" />
+    <ClCompile Include="mrxgcd.c" />
+    <ClCompile Include="mrzzn2.c" />
+    <ClCompile Include="mrzzn2b.c" />
+    <ClCompile Include="mrzzn3.c" />
+    <ClCompile Include="Proxylib.cpp" />
+    <ClCompile Include="proxylib_pre1.cpp" />
+    <ClCompile Include="proxylib_pre2.cpp" />
+    <ClCompile Include="proxylib_test.cpp" />
+    <ClCompile Include="proxylib_utilities.cpp" />
+    <ClCompile Include="zzn.cpp" />
+    <ClCompile Include="zzn2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="big.h" />
+    <ClInclude Include="brick.h" />
+    <ClInclude Include="crt.h" />
+    <ClInclude Include="ebrick.h" />
+    <ClInclude Include="ebrick2.h" />
+    <ClInclude Include="ec2.h" />
+    <ClInclude Include="ecn.h" />
+    <ClInclude Include="ecnzzn.h" />
+    <ClInclude Include="flash.h" />
+    <ClInclude Include="floating.h" />
+    <ClInclude Include="gf2m.h" />
+    <ClInclude Include="miracl.h" />
+    <ClInclude Include="mirdef.h" />
+    <ClInclude Include="proxylib.h" />
+    <ClInclude Include="proxylib_api.h" />
+    <ClInclude Include="proxylib_pre1.h" />
+    <ClInclude Include="proxylib_pre2.h" />
+    <ClInclude Include="zzn.h" />
+    <ClInclude Include="zzn2.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

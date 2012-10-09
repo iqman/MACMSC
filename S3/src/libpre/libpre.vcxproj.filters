@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="big.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ecn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mraes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mralloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrarth0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrarth1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrarth2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrarth3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrbits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrbrick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrbuild.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrcore.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrcrt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrcurve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrdouble.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrebrick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrec2m.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrecn2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrfast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrflash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrflsh1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrflsh2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrflsh3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrflsh4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrfrnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrgcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrgcm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrgf2m.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrio1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrio2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrjack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrlucas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrmonty.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrmuldv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrpi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrpower.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrprime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrrand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrround.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrscrt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrshs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrshs256.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrshs512.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrsmall.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrsroot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrstrong.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrxgcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrzzn2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrzzn2b.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mrzzn3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxylib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxylib_api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxylib_pre1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxylib_pre2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxylib_utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zzn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zzn2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="big.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="brick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ebrick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ebrick2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ecn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ecnzzn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="floating.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gf2m.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="miracl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mirdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxylib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxylib_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxylib_pre1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxylib_pre2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zzn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zzn2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{674EBC97-1928-43BD-8A7B-55C196A025E2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StorageHoster</RootNamespace>
+    <AssemblyName>StorageHoster</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\S1CloudServices\DataEntityStorageImpl.cs">
+      <Link>DataEntityStorageImpl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\Persistance\AttributeMetadata.cs">
+      <Link>AttributeMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\Persistance\AuthorMetadata.cs">
+      <Link>AuthorMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\Persistance\EntityAttribute.cs">
+      <Link>EntityAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\Persistance\EntityId.cs">
+      <Link>EntityId.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\Persistance\EntityMetadata.cs">
+      <Link>EntityMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\Persistance\StorageMetadata.cs">
+      <Link>StorageMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\Persistance\UserMetadata.cs">
+      <Link>UserMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\Persistance\UsersMetadata.cs">
+      <Link>UsersMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\S1CloudServices\UserMetadataStorageImpl.cs">
+      <Link>UserMetadataStorageImpl.cs</Link>
+    </Compile>
+    <Compile Include="DataEntityStorage.cs" />
+    <Compile Include="GatewayService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Shared.csproj">
+      <Project>{FDA8BF85-B1DE-4D10-8113-2196D45BBFA0}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StorageGateway\StorageGateway.csproj">
+      <Project>{F82D9838-D790-4E7A-8E64-37C856D52681}</Project>
+      <Name>StorageGateway</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
